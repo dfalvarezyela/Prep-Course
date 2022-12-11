@@ -60,9 +60,9 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x == y) {
+  if (x === y) {
     return true;
-  else {
+  } else {
     return false;
     }
   }
@@ -86,9 +86,9 @@ function menosQueNoventa(num) {
   // Tu código:
   if (num < 90) {
     return true;
+  }
   else {
     return false;
-  }
   }
 }
 
@@ -114,7 +114,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {
+  if (num % 2 === 0) {
     return true;
   else {
     return false;
@@ -128,9 +128,9 @@ function esImpar(num) {
   // Tu código:
   if (num % 2 !== 0) {
     return true;
+  }
   else {
     return false;
-  }
   }
 }
 
@@ -138,19 +138,19 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  Math.pow(num, 2);
+  return Math.pow(num, 2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  Math.pow(num, 3);
+  return Math.pow(num, 3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  Math.pow(num, exponent);
+  return Math.pow(num, exponent);
 }
 
 function redondearNumero(num) {
@@ -204,7 +204,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola " + nombre;
+  return "Hola " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
